@@ -1,0 +1,40 @@
+
+import java.util.*;
+
+//public static Scanner sc=new Scanner(System.in);
+class Solution
+{
+    public static final int SIZE=3;
+    public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+        int[] aList=new int[SIZE];
+        int[] bList=new int[SIZE];
+        
+        for(int i=0;i<SIZE;i++)
+        {
+            aList[i]=sc.nextInt();
+        }
+        for(int i=0;i<SIZE;i++)
+        {
+            bList[i]=sc.nextInt();
+        }
+        
+        
+        int aScore=0;
+        int bScore=0;
+        for(int i=0;i<SIZE;i++)
+        {
+            if(aList[i]>bList[i]){
+                aScore++;
+            }
+            else if(bList[i]>aList[i]){
+                bScore++;
+            }
+                
+        }
+        
+        System.out.println(aScore +" "+ bScore);
+        
+    }
+}
+ 
